@@ -10,8 +10,10 @@ const reduceText = function() {
         aProposText.style.fontSize = '1.8rem';
     } else if (window.innerWidth > 600){
         aProposText.style.fontSize = '1.5rem';
-    } else {
+    } else if (window.innerWidth > 450){
         aProposText.style.fontSize = '1.3rem';
+    } else {
+        aProposText.style.fontSize = '1.1rem';
     };
 };
 

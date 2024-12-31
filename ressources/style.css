@@ -35,30 +35,19 @@ header h2 a {
     font-size: 2rem;
 }
 
-header h2 a:hover {
-    color: #7c7ce7;
-    font-size: 2.2rem;
-    transition-duration: 150ms;
-    padding-left: 2.5rem;
+@media only screen and (min-width: 700px) {
+    header h2 a:hover {
+        color: #7c7ce7;
+        font-size: 2.2rem;
+        transition-duration: 150ms;
+        padding-left: 2.5rem;
+    }
 }
 
 header h2 a:active {
     color: #6565db;
     font-size: 2.05rem;
     padding-left: 3rem;
-}
-
-@media only screen and (max-width: 700px) {
-    header h2 a {
-        padding-left: 2rem;
-        width: 140px;   
-    }
-    header h2 a:hover {
-        padding-left: 1.5rem;
-    }
-    header h2 a:active {
-        padding-left: 2rem;
-    }
 }
 
 /* Nav */
@@ -90,7 +79,7 @@ nav a:active {
 
 #list-menu {
     width: 100px;
-    position: absolute;
+    position: fixed;
     right: 48px;
     z-index: 6;
     display: none;
@@ -255,14 +244,16 @@ nav a:active {
     width: 100%;
 }
 
-.images2:hover {
-    width: 420px;
-    height:420px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    transition-duration: 100ms;
-    cursor: pointer;
-    box-shadow: 2px 4px 25px rgb(115, 113, 173);;
+@media only screen and (min-width: 700px) {
+    .images2:hover {
+        width: 420px;
+        height: 420px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        transition-duration: 100ms;
+        cursor: pointer;
+        box-shadow: 2px 4px 25px rgb(115, 113, 173);;
+    }
 }
 
 .images2:active {
@@ -308,11 +299,13 @@ nav a:active {
     padding: 10px;
 }
 
-#contact a:hover {
-    font-size: 2.2rem;
-    transition-duration: 100ms;
-    box-shadow: 2px 4px 10px #020216;
-    color: #ababf4;
+@media only screen and (min-width: 700px) {
+    #contact a:hover {
+        font-size: 2.2rem;
+        transition-duration: 100ms;
+        box-shadow: 2px 4px 10px #020216;
+        color: #ababf4;
+    }
 }
 
 #contact a:active {
@@ -347,12 +340,10 @@ nav a:active {
         box-shadow: 4px 4px 10px black;
         display: none;
     }
-
     nav a:hover {
         padding: 0px 1rem;
         font-size: 1.5rem;
     }
-
     nav a:active {
         padding: 0px 1rem;
         font-size: 1.5rem;
@@ -361,14 +352,12 @@ nav a:active {
     #list-menu {
         display: block;
     }
-
     #list-menu:hover {
         cursor: pointer;
         filter: opacity(0.5) drop-shadow(0 0 0 blue);
         width: 110px;
         right: 43px;
     }
-
     #list-menu:active {
         filter: none;
         width: 100px;
@@ -394,6 +383,15 @@ nav a:active {
 }
 
 @media only screen and (max-width: 700px) {
+    header h2 a {
+        padding-left: 2rem;
+        width: 140px;   
+    }
+ 
+    header h2 a:active {
+        padding-left: 2rem;
+    }
+
     #list-menu {
         right: 32px
     }
@@ -406,5 +404,27 @@ nav a:active {
 
     .a-propos-text {
         background: linear-gradient(to right, rgba(155, 155, 179, 0) 2%, rgba(214, 214, 228, 0.9) 15%, rgba(214, 214, 228, 0.9) 85%, rgba(155, 155, 179, 0) 98%);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .images {
+        padding: 40px 15px;
+    }
+
+    .images2 {
+        width: 350px;
+        height: 350px;
+    }
+    .images2:active {
+        width: 330px;
+        height: 330px;
+    }
+
+    #contact p {
+        font-size: 1.5rem;
+    }
+    #contact a:active {
+        font-size: 1.3rem;
     }
 }
