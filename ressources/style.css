@@ -408,6 +408,13 @@ nav a:active {
 }
 
 @media only screen and (max-width: 450px) {
+    .a-propos {
+        height: 80vh;
+    }
+    .filter {
+        height: 80vh;
+    }
+
     .images {
         padding: 40px 15px;
     }
