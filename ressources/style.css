@@ -411,6 +411,11 @@ nav a:active {
     .a-propos {
         height: 80vh;
     }
+    .a-propos-text h1,
+    .a-propos-text h2  {
+        letter-spacing: 0.2rem;
+        word-spacing: 0.5rem;
+    }
     .filter {
         height: 80vh;
     }
