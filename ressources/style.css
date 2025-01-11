@@ -480,4 +480,8 @@ nav a:active {
         width: 280px;
         margin: 30px 0px 50px 0px;
     }
+
+    .images2 h3 {
+        font-size: 1.6rem;
+    }
 }
