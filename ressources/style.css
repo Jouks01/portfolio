@@ -449,6 +449,13 @@ nav a:active {
         width: 330px;
         height: 330px;
     }
+    .images2 h3,
+    .images2 p {
+        padding: 0px;
+    }
+    .images2 p {
+        font-size: 0.9rem;
+    }
 
     #contact p {
         font-size: 1.5rem;
